@@ -80,7 +80,7 @@
 				</section>	
 
 				<section data-background="img/ventana.png">
-					<h2>Obetivos</h2>
+					<h2>Objetivos</h2>
 					<blockquote >Hacer de las imágenes una fuente de datos cuantitativos para estudios de Contaminación Lumínica</blockquote>
 					
 					<p class="fragment">Recabar colaboración para el trabajo científico</p>
@@ -137,22 +137,39 @@
 
 				<section data-background="img/fondoviirs.png">
 					<blockquote style="color:yellow">En términos científicos, por contaminación lumínica se entiende la alteración de la oscuridad natural del medio nocturno producida por la emisión de luz artificial. </blockquote>
+					<aside class="notes">
+						<ul>
+						<li>Definición</li>
+						</ul>
+					</aside>
 				</section>
 
 				<section data-background="img/contaminacionLuninica.png">
 					<img src='img/consumo.png'>
 					<pre>Sánchez de Miguel, A., Zamorano, J., Gómez Castaño, J., & Pascual, S. (2014). Evolution of the energy consumed by street lighting in Spain estimated with DMSP-OLS data. Journal of Quantitative Spectroscopy and Radiative Transfer, 139, 109-117.</pre>
+
+					<aside class="notes">
+						Evolución del consumo energético usando datos de satélite DMSP desde 1992 calibrados en 1998 y 2012, y VIIRS calibrados en 2014
+					</aside>
 				</section>
 
 				<section >
 					<h2>Procesamiento de imágenes</h2>
 					<img src='img/histogramas.png'>
+
+					<aside class="notes">
+						Procesamiento inicial automático usando la descomposición del histograma, para obtener una primera clasificación
+					</aside>
 				</section>
 
 				<section >
 					<h2>Acceso a datos</h2>
 					<img src='img/gateway.png'>
 					
+					<aside class="notes">
+						Descarga de las imágenes y los metadados desde el sitio FTP del JSC mediante un proceso automático diario
+					</aside>
+
 				</section>
 
 
@@ -189,6 +206,15 @@ Flash Control Mode:             Off
 Flash Group A Control Mode:     Off
 Flash Group B Control Mode:     Off
 Self Timer Time:                5 s</pre>
+
+
+					<aside class="notes">
+						<ul>
+						<li>Metadatos de cada imagen descargado mediante scrapping del sitio web del JSC</li>
+						<li>No todos los datos se encuentran siempre</li>
+						</ul>
+					</aside>
+
 				</section>
 
 				<section >
@@ -237,13 +263,21 @@ Self Timer Time:                5 s</pre>
 				<section >
 					<h3>Fuentes de datos</h3>
 					<img src='img/fuentes.png'>
-
+					
+					<aside class="notes">
+						<ul>
+						<li>Fuentes abiertas</li>
+						<li></li>
+						</ul>
+					</aside>
 				</section>
 
 				<section >
 					<h3>La Ciencia es demasiado importante como para dejarla en manos de los Científicos</h3>
 					<img src='img/crowdcrafting.png' width="200" heigth="200">&nbsp;&nbsp;&nbsp;<img src='img/logosolfabric.png'  width="210" heigth="210">
-
+					<aside class="notes">
+						Necesitamos una plataforma robusta que soporte la conexión de cientos de usuarios Crowdcrafting y equipo de Solfabric
+					</aside>
 				</section>
 
 				<section >
@@ -253,7 +287,9 @@ Self Timer Time:                5 s</pre>
 						PostGIS
 						</h3>
 					<img src='img/pybossa.png' width="200%">
-
+					<aside class="notes">
+						Herramientas utilizadas y framework PyBossa
+					</aside>
 				</section>
 
 				<section data-background="img/openscience.jpg" class="height: 50%">
@@ -261,17 +297,25 @@ Self Timer Time:                5 s</pre>
 						Open Source
 						Open Science</h2>
 					<img src='img/openscience.jpg'>
+					<h2 style="color:red">Permitir la difusión y verificación de resultados</h2>
 				</section>
 
 
 				<section >
 					<h3>Difusión</h3>
 					<img src='img/redessociales.png'>
+
+					<aside class="notes">
+						La difusión ha sido importante a través de redes sociales, TV, prensa, medios electrónicos, apoyo de NASA, ESA,...
+					</aside>
 				</section>
 
 				<section >
 					<img src='img/kickstarter.png'>
 					<img src='img/kickstarter2.png'>
+					<aside class="notes">
+						Participación en el Hackhathon organizado por Kickstarter en NY en pasado 28 de febrero, seleccionados entre los 16 mejores proyectos mundiales
+					</aside>
 				</section>
 				
 				<section >
@@ -307,6 +351,10 @@ Self Timer Time:                5 s</pre>
 							<tr>
 						</tbody>
 					</table>
+
+					<aside class="notes">
+						Tareas realizadas por los voluntarios
+					</aside>
 				</section>
 
 
@@ -334,19 +382,27 @@ Self Timer Time:                5 s</pre>
   "priority_0": 0.921420060044208
 
 					</code></pre>
-					
+					<aside class="notes">
+						Para la descarga de los resultados y que sean verificables se ha usado el formato JSON con todos los datos
+					</aside>
 				</section>
 
 
 				<section >
 					<h3>Resultados Visualización de imágenes</h3>
 					<a href="http://darkskyiss.org/" target="_blank"><img src='img/visualimagenes.png'></a>
+
+					<aside class="notes">
+						Otro medio de comprobación de resultados es la visualización directa de las imágenes. Enlace externo
+					</aside>
 				</section>	
 
 
 
 				<section data-background="img/postales.png">
-
+					<aside class="notes">
+						Existen más de 200 imágenes completamente georreferenciadas
+					</aside>
 				</section>
 
 
@@ -377,7 +433,7 @@ Self Timer Time:                5 s</pre>
 
 				<section>
 					<h2 style="color:yellow">Esperamos vuestra participación</h2>
-					<a href="http://www.citiesatnight.org/index_ES.html" target="_blank"><img src='img/qr.png'></a>
+					<a href="http://www.citiesatnight.org/index_ES.html" target="_blank" width="350" height="350"><img src='img/qr.png'></a>&nbsp;&nbsp;&nbsp;<img src='img/ahorro.jpg' width="350" height="350">
 			
 				</section>
 
